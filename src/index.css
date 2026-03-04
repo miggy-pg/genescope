@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Nunito', system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-encarta-orange text-encarta-text-dark;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  /* Base category button - slanted parallelogram shape */
+  .category-btn {
+    @apply relative flex items-center py-3 px-6
+           bg-gradient-to-b from-encarta-yellow-light via-encarta-lime to-encarta-yellow
+           border-4 border-encarta-green
+           shadow-encarta cursor-pointer
+           transition-all duration-200 ease-out
+           hover:shadow-encarta-hover hover:brightness-105
+           active:scale-95;
+    border-radius: 12px;
+  }
+
+  /* Left panel buttons - skew to the right (more pronounced) */
+  .category-btn-left {
+    transform: skewX(-15deg);
+    min-width: 230px;
+  }
+
+  .category-btn-left .category-btn-content {
+    transform: skewX(15deg);
+    @apply flex items-center gap-3 w-full;
+  }
+
+  /* Right panel buttons - skew to the left (more pronounced) */
+  .category-btn-right {
+    transform: skewX(15deg);
+    min-width: 230px;
+  }
+
+  .category-btn-right .category-btn-content {
+    transform: skewX(-15deg);
+    @apply flex items-center gap-3 w-full flex-row-reverse;
+  }
+
+  .category-btn-text {
+    @apply font-bold text-base text-encarta-text-dark leading-tight;
+  }
+
+  .category-btn-icon {
+    @apply text-3xl flex-shrink-0;
+  }
+
+  .search-input {
+    @apply w-full px-4 py-2 rounded-full border-2 border-encarta-green
+           bg-white text-encarta-text-dark
+           focus:outline-none focus:ring-2 focus:ring-encarta-lime
+           placeholder:text-gray-400;
+  }
+
+  .nav-btn {
+    @apply p-2 rounded-full bg-encarta-green text-white
+           hover:bg-encarta-green-dark transition-colors
+           shadow-md hover:shadow-lg;
+  }
+}
