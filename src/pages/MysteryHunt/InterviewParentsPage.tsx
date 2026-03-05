@@ -75,12 +75,13 @@ export default function InterviewParentsPage() {
                 👨‍👩‍👦 Couple A: Mr. and Mrs. Rivera
               </h3>
 
-              {/* Parents Image Placeholder */}
-              <div className="w-full h-32 bg-white rounded-lg flex items-center justify-center mb-4">
-                <div className="text-center">
-                  <div className="text-4xl">👨🏾 👩🏾</div>
-                  <p className="text-xs text-gray-400 mt-1">Rivera couple</p>
-                </div>
+              {/* Parents Image */}
+              <div className="w-full h-40 bg-white rounded-lg overflow-hidden mb-4">
+                <img
+                  src="https://res.cloudinary.com/dz2ibjr0c/image/upload/v1772709345/genescope/Couple_A_sa5byk.jpg"
+                  alt="Mr. and Mrs. Rivera"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               <div className="space-y-2 text-sm text-[#4A148C]">
@@ -101,12 +102,13 @@ export default function InterviewParentsPage() {
                 👨‍👩‍👦 Couple B: Mr. and Mrs. Santos
               </h3>
 
-              {/* Parents Image Placeholder */}
-              <div className="w-full h-32 bg-white rounded-lg flex items-center justify-center mb-4">
-                <div className="text-center">
-                  <div className="text-4xl">👨🏻 👩🏻</div>
-                  <p className="text-xs text-gray-400 mt-1">Santos couple</p>
-                </div>
+              {/* Parents Image */}
+              <div className="w-full h-40 bg-white rounded-lg overflow-hidden mb-4">
+                <img
+                  src="https://res.cloudinary.com/dz2ibjr0c/image/upload/v1772709345/genescope/Couple_B_wlpvje.jpg"
+                  alt="Mr. and Mrs. Santos"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               <div className="space-y-2 text-sm text-[#1B5E20]">

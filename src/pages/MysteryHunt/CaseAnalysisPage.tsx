@@ -47,7 +47,7 @@ function Section({
           </h3>
           {/* IMAGE or PLACEHOLDER */}
           {imageUrl ? (
-            <div className="flex-1 rounded-xl overflow-hidden min-h-[180px] md:min-h-[200px]">
+            <div className="flex-1 rounded-xl overflow-hidden min-h-[140px] md:min-h-[160px]">
               <img
                 src={imageUrl}
                 alt={placeholderText}
@@ -55,7 +55,7 @@ function Section({
               />
             </div>
           ) : (
-            <div className="flex-1 bg-white/80 backdrop-blur rounded-xl border-2 border-dashed border-gray-300 flex items-center justify-center min-h-[180px] md:min-h-[200px]">
+            <div className="flex-1 bg-white/80 backdrop-blur rounded-xl border-2 border-dashed border-gray-300 flex items-center justify-center min-h-[140px] md:min-h-[160px]">
               <div className="text-center p-4">
                 <div className="text-4xl mb-2 opacity-50">🖼️</div>
                 <p className="text-gray-500 text-sm">{placeholderText}</p>
@@ -93,7 +93,7 @@ export default function CaseAnalysisPage() {
             lightBgColor="bg-[#E3F2FD]"
             textColor="text-[#1565C0]"
             placeholderText="Family genetics illustration"
-            imageUrl="https://res.cloudinary.com/dz2ibjr0c/image/upload/c_crop,g_south,h_900/v1772654511/genescope/Gemini_Generated_Image_f0zhyef0zhyef0zh_d4hqik.png"
+            imageUrl="https://res.cloudinary.com/dz2ibjr0c/image/upload/v1772707037/genescope/Gemini_Generated_Image_f0zhyef0zhyef0zh_svdzq9.jpg"
             content={
               <>
                 <p className="mb-3">
@@ -123,6 +123,7 @@ export default function CaseAnalysisPage() {
             lightBgColor="bg-[#E8EAF6]"
             textColor="text-[#303F9F]"
             placeholderText="Baby inheriting genes from parents"
+            imageUrl="https://res.cloudinary.com/dz2ibjr0c/image/upload/v1772707134/genescope/Gemini_Generated_Image_pvcuapvcuapvcuap_utio4z.jpg"
             content={
               <>
                 <p className="mb-3">
@@ -155,6 +156,7 @@ export default function CaseAnalysisPage() {
             lightBgColor="bg-[#FBE9E7]"
             textColor="text-[#E64A19]"
             placeholderText="Babies showing visible traits"
+            imageUrl="https://res.cloudinary.com/dz2ibjr0c/image/upload/v1772707037/genescope/Gemini_Generated_Image_fm0k0tfm0k0tfm0k_qpl21n.jpg"
             content={
               <>
                 <p className="mb-3">
@@ -188,6 +190,7 @@ export default function CaseAnalysisPage() {
             lightBgColor="bg-[#E0F2F1]"
             textColor="text-[#00695C]"
             placeholderText="BB and bb allele illustration"
+            imageUrl="https://res.cloudinary.com/dz2ibjr0c/image/upload/v1772707037/genescope/Gemini_Generated_Image_ltm997ltm997ltm9_ou97wd.jpg"
             content={
               <>
                 <p className="mb-3">
@@ -220,6 +223,7 @@ export default function CaseAnalysisPage() {
             lightBgColor="bg-[#F3E5F5]"
             textColor="text-[#6A1B9A]"
             placeholderText="Bb allele illustration"
+            imageUrl="https://res.cloudinary.com/dz2ibjr0c/image/upload/v1772707037/genescope/Gemini_Generated_Image_mlu0irmlu0irmlu0_ilio9k.jpg"
             content={
               <>
                 <p className="mb-3">
@@ -252,6 +256,7 @@ export default function CaseAnalysisPage() {
             lightBgColor="bg-[#E1F5FE]"
             textColor="text-[#0277BD]"
             placeholderText="Punnett square showing 1:2:1 ratio"
+            imageUrl="https://res.cloudinary.com/dz2ibjr0c/image/upload/v1772707037/genescope/Gemini_Generated_Image_ixnmp7ixnmp7ixnm_1_pdsj4w.jpg"
             content={
               <>
                 <p className="mb-3">
@@ -283,6 +288,7 @@ export default function CaseAnalysisPage() {
             lightBgColor="bg-[#FFFDE7]"
             textColor="text-[#F57F17]"
             placeholderText="3:1 ratio illustration with babies"
+            imageUrl="https://res.cloudinary.com/dz2ibjr0c/image/upload/v1772707037/genescope/Gemini_Generated_Image_o600ywo600ywo600_udvcgz.jpg"
             content={
               <>
                 <p className="mb-3">
@@ -309,13 +315,12 @@ export default function CaseAnalysisPage() {
               {/* Left - Image */}
               <div className="bg-gradient-to-br from-[#E3F2FD] to-[#BBDEFB] p-6 md:p-8 flex flex-col order-2 md:order-1">
                 {/* IMAGE PLACEHOLDER */}
-                <div className="flex-1 bg-white/80 backdrop-blur rounded-xl border-2 border-dashed border-gray-300 flex items-center justify-center min-h-[200px] md:min-h-[280px]">
-                  <div className="text-center p-4">
-                    <div className="text-4xl mb-2 opacity-50">🖼️</div>
-                    <p className="text-gray-500 text-sm">
-                      Family matching - Couple A, Wife A, Husband B with babies
-                    </p>
-                  </div>
+                <div className="flex-1 rounded-xl overflow-hidden min-h-[140px] md:min-h-[160px]">
+                  <img
+                    src="https://res.cloudinary.com/dz2ibjr0c/image/upload/v1772707538/genescope/Gemini_Generated_Image_3be3bn3be3bn3be3_nc4j5f.jpg"
+                    // alt={placeholderText}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               {/* Right - Text */}
